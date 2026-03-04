@@ -709,6 +709,92 @@ export default function OfferLetterForm({ initialData = {}, onDataUpdate, onComp
           flex-shrink: 0;
         }
         .done-text { font-size: 13px; color: #4ade80; }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+          .form-body {
+            padding: 12px;
+          }
+          .form-section {
+            padding: 12px;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+          .form-header {
+            padding: 10px 12px;
+            gap: 8px;
+          }
+          .form-header-title {
+            font-size: 13px;
+          }
+          .form-body {
+            padding: 10px;
+            gap: 6px;
+          }
+          .form-section {
+            padding: 10px;
+          }
+          .section-header {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+          }
+          .field-label {
+            font-size: 11px;
+          }
+          .field-input, .field-textarea, .field-select {
+            padding: 9px 10px;
+            font-size: 14px; /* better for mobile tap targets */
+          }
+          .salary-digit-display {
+            gap: 8px;
+            padding: 8px;
+            flex-wrap: wrap;
+          }
+          .digit-box {
+            width: 22px;
+            height: 28px;
+            font-size: 14px;
+          }
+          .salary-formatted {
+            font-size: 12px;
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+          }
+          .breakup-table {
+            font-size: 11px;
+          }
+          .breakup-table th, .breakup-table td {
+            padding: 6px 8px;
+          }
+          .file-upload-label {
+            padding: 12px;
+          }
+          .org-lookup-btn {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .form-body {
+            padding: 8px;
+          }
+          .form-section {
+            padding: 8px;
+            border-radius: 8px;
+          }
+          .digit-box {
+            width: 20px;
+            height: 26px;
+            font-size: 13px;
+          }
+          .digit-label {
+            font-size: 8px;
+          }
+        }
       `}</style>
     </div>
   );

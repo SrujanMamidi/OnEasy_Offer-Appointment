@@ -29,6 +29,12 @@ html, body {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto;
+  }
+}
+
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }

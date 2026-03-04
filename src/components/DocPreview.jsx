@@ -715,6 +715,81 @@ export default function DocPreview({ data, allDone, onDownloadOffer, onDownloadA
           background: #f9f9f9; border: 1px dashed #ddd; border-radius: 4px;
           font-size: 12px;
         }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+          .a4-page {
+            padding: 40px 40px;
+          }
+          .preview-scroll {
+            padding: 20px 16px;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+          .preview-toolbar {
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 12px;
+            align-items: stretch;
+          }
+          .toolbar-left {
+            justify-content: space-between;
+          }
+          .toolbar-right {
+            flex-direction: column !important;
+            gap: 8px !important;
+          }
+          .download-btn {
+            width: 100%;
+            text-align: center;
+            padding: 10px 16px;
+          }
+          .preview-scroll {
+            padding: 12px 8px;
+          }
+          .a4-page {
+            width: 100%;
+            padding: 24px 16px;
+            font-size: 11px;
+            line-height: 1.6;
+          }
+          .doc-title {
+            font-size: 13px;
+          }
+          .ref-row {
+            flex-direction: column;
+            gap: 4px;
+          }
+          .annex-meta {
+            flex-direction: column;
+            gap: 6px;
+          }
+          .salary-table {
+            font-size: 10px;
+          }
+          .salary-table th, .salary-table td {
+            padding: 5px 6px;
+          }
+          .accept-table td {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .a4-page {
+            padding: 16px 12px;
+            font-size: 10.5px;
+          }
+          .doc-title {
+            font-size: 12px;
+          }
+          .preview-label {
+            font-size: 11px;
+          }
+        }
       `}</style>
     </div>
   );

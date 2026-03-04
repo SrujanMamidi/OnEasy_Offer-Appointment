@@ -207,6 +207,56 @@ export default function OfferLetterApp() {
           box-shadow: 0 -10px 20px rgba(0,0,0,0.2);
           z-index: 10;
         }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+          .form-half {
+            flex: 0 0 380px;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+          .app-layout {
+            height: auto;
+            min-height: calc(100vh - 50px);
+            margin-top: 50px;
+            overflow: auto;
+          }
+          .wizard-content {
+            overflow: visible;
+          }
+          .step-panel {
+            position: relative;
+            inset: unset;
+          }
+          .side-by-side {
+            flex-direction: column;
+            height: auto;
+          }
+          .form-half {
+            flex: none;
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid rgba(201,168,76,0.15);
+            max-height: none;
+          }
+          .preview-half {
+            flex: none;
+            width: 100%;
+            min-height: auto;
+          }
+          .preview-actions {
+            padding: 16px;
+            flex-direction: column;
+            gap: 12px;
+          }
+          .btn-primary.huge {
+            padding: 14px 20px;
+            font-size: 15px;
+            width: 100%;
+          }
+        }
       `}</style>
     </div>
   );
