@@ -8,11 +8,10 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/node": "^8.3.4",
-    "@astrojs/react": "^3.6.0",
-    "@astrojs/vercel": "^7.8.2",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/vercel": "^9.0.4",
     "@supabase/supabase-js": "^2.98.0",
-    "astro": "^4.16.0",
+    "astro": "^5.18.0",
     "docx": "^8.5.0",
     "file-saver": "^2.0.5",
     "react": "^18.3.1",
@@ -22,5 +21,8 @@
     "@types/file-saver": "^2.0.7",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
